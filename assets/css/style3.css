@@ -1,0 +1,856 @@
+/* Login Register */
+.header-color {
+    background: linear-gradient(to left, #7347c1, #0674ec);
+    height: 100px;
+}
+
+.loginRes {
+    height: 600px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginRes .card {
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.loginRes .inner-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.input_file {
+    width: 250px;
+}
+
+.input_file .modalAdd-input_file {
+    padding: 6px 0;
+}
+
+.loginRes .card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0674ec;
+    padding: 10px 55px 55px;
+    backface-visibility: hidden;
+}
+
+.loginRes .card-back {
+    transform: rotateY(180deg);
+}
+
+.loginRes .card h2 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 20px 0 15px;
+    color: #0674ec;
+}
+
+.loginRes .input-box {
+    width: 100%;
+    height: 32px;
+    background: transparent;
+    border: 1px solid #0674ec;
+    margin: 6px 0;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.loginRes button {
+    width: 100%;
+    height: 32px;
+    background: linear-gradient(to left, #7347c1, #0674ec);
+    border: none;
+    margin: 35px 0 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+}
+
+.loginRes button:hover {
+    background: linear-gradient(to left, #0674ec, #7347c1);
+    color: #fff;
+}
+.loginRes button:active {
+    background: #fff;
+    color: #000;
+    border: 1px solid #0674ec;
+}
+
+.loginRes .card-check {
+    margin-top: 8px;
+}
+
+.loginRes .checkpass {
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+}
+
+.loginRes .card-forgot {
+    font-size: 14px;
+    color: #000;
+    margin-top: 8px;
+}
+
+.loginRes .card-forgot:hover {
+    color: #0674ec;
+}
+
+.loginRes .card-back .submit-btn {
+    margin-bottom: 11px;
+}
+
+.loginRes .card-front .btnL {
+    margin-top: 70px;
+}
+
+.loginRes .card-back .btnL {
+    margin-top: 25px;
+}
+
+#message {
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+    display: none;
+}
+#message1 {
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+    display: none;
+}
+#message2 {
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+    display: none;
+}
+#message3 {
+    font-size: 14px;
+    color: #000;
+    margin-left: 10px;
+    display: none;
+}
+
+.loginRes .card-form {
+    height: 180px;
+}
+
+.loginRes .about-logo {
+    text-align: center;
+}
+
+.loginRes .about-logo-img {
+    background: linear-gradient(to left, #7347c1, #0674ec);
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+/* Login Register */
+
+/* Change password */
+.changePass {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.changePass .change-pass {
+    width: 600px;
+    height: 450px;
+    border: 1px solid #0674ec;
+}
+
+.changePass .change-title {
+    font-size: 2.2rem;
+    color: #0674ec;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.changePass .change-info {
+    margin: 10px 25px 25px 25px;
+}
+
+.changePass .change-list {
+    margin-bottom: 36px;
+    height: 250px;
+}
+
+.changePass .change-item {
+    margin: 10px 20px 10px 20px;
+    padding: 5px 0 5px 10px;
+    display: flex;
+}
+
+.changePass .change-item h5 {
+    color: #000;
+    font-size: 1.2rem;
+    width: 200px;
+}
+
+.changePass .change-item span {
+    font-size: 1.2rem;
+    color: #0674ec;
+}
+
+.changePass .input-box {
+    width: 300px;
+    height: 40px;
+    margin: 0 10px 5px 0;
+    border: 1px solid #0674ec;
+    outline: none;
+    padding: 0 8px;
+    font-size: 1rem;
+}
+
+.changePass .change-btn {
+    text-align: end;
+    padding-right: 24px;
+}
+
+.btn {
+    margin: 0;
+    padding: 4px 20px;
+    font-size: 1rem;
+    background: linear-gradient(to left, #7347c1, #0674ec);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(to left,#0674ec, #7347c1);
+}
+
+.btn:active {
+    background: #fff;
+    color: #000;
+    border: 1px solid #0674ec;
+}
+/* Change password */
+
+/* Info */
+.infor {
+    height: 600px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infor .account {
+    width: 600px;
+    height: 550px;
+    border: 1px solid #0674ec;
+}
+
+.infor .acc-username {
+    font-size: 2.2rem;
+    color: #0674ec;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.infor .acc-info {
+    margin: 10px 25px 25px 25px;
+}
+
+.infor .acc-list {
+    margin-bottom: 20px;
+}
+
+.infor .acc-item {
+    margin: 10px 20px 10px 20px;
+    padding: 5px 0 5px 10px;
+    display: flex;
+}
+
+.infor .acc-item h5 {
+    color: #000;
+    font-size: 1.2rem;
+    width: 150px;
+}
+
+.infor .acc-item span {
+    font-size: 1.2rem;
+    color: #0674ec;
+}
+
+.infor .info__sex :checked {
+    width: 20px;
+    height: 20px;
+}
+
+.infor .info__sex {
+    width: 20px;
+    height: 20px;
+}
+
+.infor .address-list {
+    width: 340px;
+}
+
+.infor .address-item {
+    width: 340px;
+    height: 40px;
+    margin: 0 10px 5px 0;
+    border: 1px solid #0674ec;
+    outline: none;
+    padding: 0 8px;
+    font-size: 1rem;
+}
+
+.infor .acc-btn {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Info */
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-contain {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    padding: 10px 0 0 0;
+    text-align: center;
+    border-top: 10px solid #07a787;
+    border-bottom: 10px solid #07a787;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-icon {
+    width: 75px;
+    height: 75px;
+    border: 10px solid #07a787;
+    border-radius: 50%;
+}
+
+.modal-text {
+    color: #07a787;
+    padding: 15px 0;
+}
+
+.agree {
+    margin: 0;
+    padding: 4px 20px;
+    font-size: 1rem;
+    background: #07a787;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+}
+
+.agree:active {
+    background: #fff;
+    color: #000;
+    border: 1px solid #07a787;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Admin */
+.contain {
+    margin: 20px 0;
+}
+
+.theme {
+    font-size: 2.2rem;
+    font-weight: 750;
+    display: block;
+    text-align: center;
+}
+
+.header-new-opt {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opt-end {
+    justify-content: end;
+}
+
+.btn-new {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.row-admin {
+    width: 1080px;
+    min-height: 300px;
+    margin-top: 20px;
+}
+
+.pro-list {
+    border: 1px solid #0674ec;
+}
+
+.pro-title {
+    height: 34px;
+    display: flex;
+}
+
+.pro-title div {
+    border: 1px solid #0674ec;
+    font-size: 1.2rem;
+    line-height: 34px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.title-name,
+.item-name {
+    flex: 4;
+}
+
+.title-image,
+.item-image {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.title-price,
+.item-price,
+.title-price_current,
+.item-price_current {
+    flex: 2;
+}
+
+.title-reduce,
+.item-reduce {
+    flex: 0.8;
+}
+
+
+.title-descript,
+.item-descript {
+    flex: 1.1;
+}
+
+.title-tool,
+.item-tool {
+    flex: 2;
+}
+
+.pro-item {
+    height: 64px;
+    display: flex;
+}
+
+.pro-item_line {
+    height: 36px;
+}
+
+.pro-item div {
+    border: 1px solid #0674ec;
+    font-size: 1.1rem;
+    line-height: 34px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.item-img {
+    width: 60px;
+    height: 60px;
+}
+
+.item-descript,
+.item-tool,
+.item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-descript,
+.btn-edit,
+.btn-delete,
+.btn-details {
+    font-size: 1rem;
+}
+
+.pro-cate .title-name,
+.pro-cate .item-name,
+.pro-cate .title-tool,
+.pro-cate .item-tool {
+    flex: 3.8;
+    justify-content: start;
+}
+
+.pro-cate .btn-edit,
+.pro-cate .btn-delete {
+    justify-content: start;
+    margin: 0 8px;
+}
+
+/* Users */
+.pro-users .title-name,
+.pro-users .item-name {
+    flex: 2;
+}
+
+.title-email,
+.item-email {
+    flex: 2;
+}
+
+.title-role,
+.item-role {
+    flex: 1.5;
+}
+
+.pro-users .title-tool,
+.pro-users .item-tool {
+    flex: 1;
+}
+/* Users */
+
+/* Orders */
+.title-buyerName,
+.item-buyerName {
+    flex: 2.5;
+}
+
+.title-date,
+.item-date {
+    flex: 1.3;
+}
+
+.title-address,
+.item-address {
+    flex: 3;
+}
+
+.title-total,
+.item-total {
+    flex: 1.5;
+}
+
+.title-status,
+.item-status {
+    flex: 1.5;
+}
+
+.title-details,
+.item-details {
+    flex: 1.5;
+}
+/* Orders */
+
+/* Modal admin */
+.modalAdd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modalAdd.open {
+    display: flex;
+}
+
+.modal-line {
+    width: 1208px;
+    height: 538px;
+    background: linear-gradient(to left, #7347c1, #0674ec);
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modalAdd-contain {
+     width: 1200px;
+    height: 530px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 4px 0 0 4px;
+}
+
+.modalAdd-header {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.modalAdd-list {
+    margin: 10px 0 20px 16px;
+}
+
+.modalAdd-item {
+    width: 400px;
+    margin: 10px;
+    /* padding: 0 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-desc {
+    width: 700px;
+    margin: 10px 0 20px 16px;
+}
+
+.modalAdd-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 34px;
+    width: 150px;
+}
+
+.modalAdd-input,
+.modalAdd-opt {
+    border: 1px solid #0674ec;
+    width: 250px;
+}
+
+.mo-flex {
+    width: 250px;
+}
+
+.mo-flex .modalAdd-input {
+    width: 250px;
+    height: 33px;
+    margin: 5px 0;
+}
+
+.modalAdd-descript {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalAdd-input-descript {
+    border: 1px solid #0674ec;
+    width: 300px;
+    height: 370px;
+}
+
+.modalAdd-input-descript:nth-child(2) {
+    margin-left: 20px;
+}
+
+.modalAdd-btn {
+    margin: 20px 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-line-s {
+    width: 508px;
+    height: 188px;
+}
+
+.modalAdd-contain-s {
+    width: 500px;
+    height: 180px;
+}
+
+.modal-line-m {
+    width: 608px;
+    height: 538px;
+}
+
+.modalAdd-contain-m {
+    width: 600px;
+    height: 530px;
+}
+
+.modal-line-m-2 {
+    width: 808px;
+    height: 558px;
+}
+
+.modalAdd-contain-m-2 {
+    width: 800px;
+    height: 550px;
+
+}
+
+.modal-line-l {
+    width: 1088px;
+    height: 708px;
+}
+
+.modalAdd-contain-l {
+    width: 1080px;
+    height: 700px;
+}
+/* Modal admin */
+
+/* Mô tả */
+.modalAdd-intro {
+    display: flex;
+}
+
+.modalAdd-spec {
+    width: 50%;
+    height: 630px;
+    margin: 0 5px;
+}
+
+.spec-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.modalAdd-spec_item {
+    margin: 10px 20px 10px 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(150, 149, 149, 0.5);
+    display: flex;
+}
+
+.modalAdd-spec_item:last-child {
+    border-bottom: none;
+}
+
+.modalAdd-spec_item h5 {
+    width: 240px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modalAdd-spec_item span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.modalAdd-spec_list .text-line {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.modalAdd-btn-1 {
+    display: block;
+    text-align: end;
+}
+/* Mô tả */
+
+/* Chi tiết */
+.det-ul-pad {
+    height: 430px;
+}
+
+.det-list {
+    margin-top: 5px;
+    border: 1px solid #0674ec;
+}
+
+.det-total,
+.det-title {
+    height: 34px;
+    display: flex;
+}
+
+.det-title div {
+    border: 1px solid #0674ec;
+    font-size: 1.2rem;
+    line-height: 34px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.det-item {
+    height: 50px;
+    display: flex;
+}
+
+.det-item div {
+    border: 1px solid #0674ec;
+    font-size: 1.1rem;
+    line-height: 24px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.det-title-name,
+.det-item-name {
+    flex: 2;
+}
+
+.det-title-price,
+.det-item-price {
+    flex: 1;
+}
+
+.det-title-quantity,
+.det-item-quantity {
+    flex: 0.5;
+}
+
+.det-title-money,
+.det-item-money {
+    flex: 1;
+}
+
+.det-total div {
+    border: 3px solid #0674ec;
+    font-size: 1.2rem;
+    line-height: 34px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.det-total-text {
+    flex: 3;
+}
+
+.det-total-money {
+    flex: 2;
+}
+/* Chi tiết */
